@@ -38,11 +38,13 @@ html {
       font-weight: bold;
     }
   }
-}
 
-@each $size,
-$value in $widget-sizes {
-  .card.#{$size} {
-    flex:#{$value}
+  .card.small {
+    flex: map-get($map: $widget-sizes, $key: "small");
   }
+
+  .card.big {
+    flex: map-get($map: $widget-sizes, $key: "large");
+  }
+
 }
