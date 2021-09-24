@@ -25,14 +25,24 @@ html {
   justify-content: center;
   flex-flow: column;
   padding: 50px;
+
   .products {
     display: flex;
   }
+
   .card {
     margin-right: 30px;
+
     .hot {
       color: orangered;
       font-weight: bold;
     }
+  }
+}
+
+@each $size,
+$value in $widget-sizes {
+  .card.#{$size} {
+    flex:#{$value}
   }
 }
