@@ -40,11 +40,11 @@ html {
   }
 
   .card.small {
-    flex: map-get($map: $widget-sizes, $key: "small");
+    flex: map-get($widget-sizes, "small");
   }
 
   .card.big {
-    flex: map-get($map: $widget-sizes, $key: "large");
+    flex: map-get($widget-sizes, "large");
   }
 
 }
